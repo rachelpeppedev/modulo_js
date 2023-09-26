@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empréstimo Fácil</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@1&family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Livre-se das dívidas</h1>
+        <h2>Faça agora mesmo uma simulação</h2>
+        <form id="analise-emprestimo">
+            <input type="number" id="valor-divida" required placeholder="Digite o valor de seu dívida"/>
+            <p class="error-message">
+                O valor do empréstimo não quita sua dívida!
+            </p>
+            <input type="number" id="valor-emprestimo" required placeholder="Digite o valor que quer emprestar"/>
+            <textarea placeholder="Observações (opicional)" id="observacao"></textarea>
+            <button id="solicitar" type="submit">Simular Empréstimo</button>
+        </form>
+        <p class="success-mensage"></p>          
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
